@@ -1,0 +1,16 @@
+<html>
+    <header>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/mainpage.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "mainpage.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <div class="search">
+            <h1>What are you looking for today?</h1>
+            <form action="{{ url_for('search') }}", method="POST">
+                <input type="text" name="search_bar" class="searchbar">
+                <input type="submit" value="Search" class="button">
+            </form>
+        </div>  
+    </body>
+</html>
