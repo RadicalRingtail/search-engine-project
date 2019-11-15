@@ -1,4 +1,4 @@
 flask
 requests
-wikipedai
+wikipedia
 bs4
